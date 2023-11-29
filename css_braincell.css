@@ -1020,7 +1020,7 @@ details[open] summary::after {
     }
 
     .realizar_orçamento {
-        margin-top: -20px;
+        margin-top: 50vw;
         /* Adicione um espaçamento superior */
         width: 10%;
     }
