@@ -956,7 +956,7 @@ details[open] summary::after {
 
     #img1,
     #img2 {
-        width: 85%;
+        width: 87%;
         /* Reduzir o tamanho das imagens para telas menores */
         height: auto;
         /* Manter a proporção da imagem */
@@ -964,7 +964,7 @@ details[open] summary::after {
         /* Margens superior e inferior com margem automática nas laterais */
         display: block;
         /* Alterar para exibir como bloco */
-        margin-top: 125vw;
+        margin-top: 135vw;
         margin-left: -30px;
 
     }
