@@ -909,7 +909,7 @@ details[open] summary::after {
         /* mobile */
 
         .cabecalho {
-            padding: 50px;
+            padding: 10px;
             
         }
 
@@ -947,6 +947,7 @@ details[open] summary::after {
         .menu_esquerda {
             margin-left: 0;
             /* Remover a margem esquerda */
+            margin-left: 30vw
         }
 
         .menu_direita {
