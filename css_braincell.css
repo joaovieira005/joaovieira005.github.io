@@ -1,0 +1,1263 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#inicio {
+    display: table;
+}
+
+#coluna1 {
+    width: 87%;
+    float: left;
+}
+
+#legenda {
+    font-weight: bold;
+}
+
+#coluna2 {
+    width: auto;
+    padding: 1%;
+    float: left;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+#img1 {
+    /*novo*/
+    z-index: 0;
+    margin-left: 0%;
+    left: 0%;
+}
+
+#img2 {
+    /*estragado */
+    z-index: 50;
+    margin-left: 0%;
+    left: 0%;
+
+}
+
+.esconder {
+    visibility: hidden;
+}
+
+.exibir {
+    visibility: visible;
+}
+
+#img1,
+#img2 {
+    width: 45%;
+    height: 45%;
+    margin-top: 7%;
+    margin-left: 35%;
+    position: absolute;
+    padding-left: 10%;
+    cursor: pointer;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.833);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+
+    display: flex;
+    align-items: center;
+    /* menu fixo no */
+    background-color: rgb(255, 255, 255);
+    /* color de fundo do menu */
+    padding: 0px;
+    /* tamanho menu para baixo */
+    position: fixed;
+    /* menu fixo / site */
+    width: 100%;
+    margin-top: 0px;
+    /* margin a cima do menu */
+    top: 0px;
+    /* margin a cima do menu */
+    z-index: 100;
+    /* está garantindo que o txt não entre no menu */
+
+
+}
+
+.cabecalho::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid rgb(148, 255, 40);
+    /* Cor da linha */
+    box-shadow: 0 2px 2px rgb(243, 239, 239);
+    /* Sombra com cor branca suave */
+    /* Espaço entre o menu e a linha */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.cabecalho img {
+    height: 80px;
+    width: 80px;
+    margin-right: 4vw;
+    /* Espaçamento entre o logo e os menus */
+    margin-left: 0vw;
+    margin-top: 5px;
+    margin-bottom: 4px;
+    align-items: center;
+}
+
+.menu_esquerda ul {
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-left: 30vw;
+    margin-right: 0.5vw;
+
+}
+
+.menu_direita ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-left: -0, 5vw;
+}
+
+.menu_esquerda li {
+    margin-right: 3vw;
+    font-weight: bold;
+    /*aumentar a espessura do texto */
+    font-family: 'Montserrat', sans-serif;
+    /*  Montserrat */
+    text-transform: uppercase;
+    /*maiúsculas */
+    letter-spacing: 1px;
+    /* Aumentar o espaçamento entre letras */
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.menu_direita li {
+    margin-right: 3vw;
+    font-weight: bold;
+    /*aumentar a espessura do texto */
+    font-family: 'Montserrat', sans-serif;
+    /*  Montserrat */
+    text-transform: uppercase;
+    /*maiúsculas */
+    letter-spacing: 1px;
+    /* Aumentar o espaçamento entre letras */
+    font-size: 18px;
+}
+
+.menu_esquerda ul li a:hover,
+.menu_direita ul li a:hover {
+    border-bottom: 4px solid rgb(4, 231, 4);
+    /* Cor da barra verde */
+    color: rgb(4, 231, 4);
+    /* Cor do texto verde */
+}
+
+
+/* Estilo para o menu ativo (quando é clicado) */
+.menu_esquerda ul li a.ativo,
+.menu_direita ul li a.ativo {
+    border-bottom: 4px solid rgb(81, 255, 0);
+    /* Cor da barra verde */
+    color: rgb(81, 255, 0);
+    /* Cor do texto verde */
+}
+
+
+
+.menu_esquerda ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.menu_direita ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.whatsapp-botao {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-botao img {
+    border-radius: 30px;
+}
+
+.whatsapp-botao:hover {
+    transform: scale(1.1);
+}
+
+
+.titulo_orçamento {
+    margin-top: 70px;
+    font-family: rubik, Sans-serif;
+    font-size: 45px;
+    margin-left: 170px;
+    margin-bottom: 10px;
+}
+
+
+.cor-diferente {
+    color: rgb(12, 231, 12);
+    font-weight: 900;
+}
+
+.cor-diferente-2 {
+    color: rgb(12, 231, 12);
+}
+
+.Realizar {
+    font-family: rubik, Sans-serif;
+    font-size: 1.23vw;
+    padding: 0;
+    margin-left: 170px;
+    opacity: 0.8;
+    /* elemento transparente */
+    margin-top: 15px;
+    padding-bottom: 0%;
+    margin-bottom: 10px
+}
+
+.Realizar-texto {
+    display: block;
+
+
+}
+
+.garantia {
+    font-size: 1.15vw;
+    font-family: rubik, Sans-serif;
+    ;
+    margin-left: 170px;
+    text-align: left;
+    padding-top: 1px;
+    opacity: 0.9;
+    /* elemento transparente */
+    margin-bottom: 0px
+}
+
+
+.realizar_orçamento button {
+    font-size: 17px;
+    background-color: rgb(4, 231, 4);
+    border-radius: 24px;
+    padding: 13px 30px 13px 35px;
+    /* 10px em cima, 30px à direita, 10px em baixo, 18px à esquerda */
+    color: #fff;
+    margin-left: 170px;
+    margin-top: 30px;
+    cursor: pointer;
+
+
+}
+
+.realizar_orçamento button:hover {
+
+    background: rgb(52, 119, 39);
+    transition: 1s;
+}
+
+.realizar_orçamento img {
+    margin-left: 10px;
+    /* Adicionar margem à esquerda da imagem */
+    height: 15px;
+    /* Definir a altura da imagem */
+    width: 15px;
+    /* Definir a largura da imagem */
+}
+
+.oque-podemos {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 175px;
+    padding-top: 75px;
+}
+
+.oque-podemos-txt {
+    font-size: 29px;
+    padding: 0 0 0 20px;
+    border-style: solid;
+    border-width: 0 0 0 5px;
+    border-color: rgb(4, 231, 4);
+    opacity: 0.8;
+}
+
+.orcamento-gratis {
+    margin-top: 160px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.orcamento-gratis-titulo {
+    margin-left: 180px;
+    font-size: 44px;
+    letter-spacing: 1.5px;
+}
+
+.img-e-texto {
+    display: inline-flex;
+}
+
+.orcamento-gratis-titulo::before {
+    /* before para adicionar conteúdo antes do conteúdo real */
+    content: '';
+    display: block;
+    width: 30px;
+    /* Largura da barra */
+    height: 7px;
+    /* Altura da barra */
+    border-radius: 30px;
+    background-color: rgb(4, 231, 4);
+    ;
+    /* Cor da barra */
+    margin-bottom: 5px;
+    /* Espaçamento entre a barra e o texto */
+}
+
+
+
+.orcamento-gratis p {
+    margin-left: 180px;
+    max-width: 540px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+
+}
+
+.orcamento-gratis img {
+    border-radius: 20px;
+    margin-left: 50px;
+    width: 30%;
+    margin-top: -90px;
+}
+
+.realizar_orçamento-2 button {
+    font-size: 17px;
+    background-color: rgb(4, 231, 4);
+    border-radius: 24px;
+    padding: 13px 30px 13px 35px;
+    /* 10px em cima, 30px à direita, 10px em baixo, 18px à esquerda */
+    color: #fff;
+    margin-left: 170px;
+    top: 20px;
+    cursor: pointer;
+}
+
+
+.realizar_orçamento-2 button:hover {
+
+    background: rgb(52, 119, 39);
+    transition: 1s;
+}
+
+.realizar_orçamento-2 img {
+    margin-left: 10px;
+    /* Adicionar margem à esquerda da imagem */
+    height: 15px;
+    /* Definir a altura da imagem */
+    width: 15px;
+    /* Definir a largura da imagem */
+}
+
+.realizar_orçamento-3 button {
+    font-size: 17px;
+    background-color: rgb(4, 231, 4);
+    border-radius: 24px;
+    padding: 13px 30px 13px 35px;
+    /* 10px em cima, 30px à direita, 10px em baixo, 18px à esquerda */
+    color: #fff;
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+.realizar_orçamento-3 button:hover {
+
+    background: rgb(52, 119, 39);
+    transition: 1s;
+}
+
+.geral-caca {
+    align-items: center;
+    justify-self: center;
+    margin-top: 200px;
+}
+
+/* texto de baixo (Conserto Rápido) imagem antes do texto */
+
+.orcamento-gratis-2 {
+    margin-top: 80px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.orcamento-gratis-titulo-2::before {
+    /* before para adicionar conteúdo antes do conteúdo real */
+    content: '';
+    display: block;
+    width: 30px;
+    /* Largura da barra */
+    height: 7px;
+    /* Altura da barra */
+    border-radius: 30px;
+    background-color: rgb(4, 231, 4);
+    ;
+    /* Cor da barra */
+    margin-bottom: 5px;
+    /* Espaçamento entre a barra e o texto */
+}
+
+.orcamento-gratis-titulo-2 {
+    margin-left: 100px;
+    font-size: 44px;
+    letter-spacing: 1.5px;
+    margin-top: -10px
+}
+
+.img-e-texto-2 {
+    display: inline-flex;
+
+
+}
+
+.orcamento-gratis-2 p {
+    margin-left: 100px;
+    max-width: 540px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-top: -10px
+}
+
+.orcamento-gratis-2 img {
+    border-radius: 20px;
+    margin-left: 150px;
+    height: 30%;
+    width: 30%;
+
+}
+
+.imagem-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    /* Ajuste o tamanho dos quadrados */
+    gap: 10px;
+    margin-left: 0px;
+    margin-top: 60px;
+
+}
+
+.imagem-container {
+    width: 400px;
+    /* Aumente o tamanho dos quadrados */
+    height: 250px;
+    /* Aumente o tamanho dos quadrados */
+    border: 5px solid #eee5e5;
+    /* borda inferior dos icones é palavras */
+    display: flex;
+    flex-direction: column;
+    /*colocando os nomes (celular,tablet,notebook) ficar em embaixo, não ao lado */
+    justify-content: center;
+    /* centralizando os itens no quadrado */
+    align-items: center;
+    transition: border 0.3s;
+    /* Adicione uma transição suave para a borda */
+
+}
+
+.imagem-container:hover {
+    border: 3px solid rgb(4, 231, 4);
+    /* Cor da borda quando o mouse passar por cima */
+}
+
+.imagem-container:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/*div excluir */
+.imagem-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*div excluir */
+
+.imagem-container p {
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+
+.imagem-container a {
+    text-decoration: none;
+
+}
+
+.nossas-vantagens {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    /* Centraliza o conteúdo */
+    padding: 20px;
+    /* espaço ao redor do texto */
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 80px;
+
+}
+
+.imagem-e-texto:hover {
+    color: rgb(4, 231, 4);
+    /*texto quando o mouse passar por cima */
+}
+
+.nossas-vantagens h2 {
+    border-bottom: 2px solid rgb(4, 231, 4);
+    /*borda verde abaixo do título */
+    padding-bottom: 10px;
+    /* Adiciona espaço entre o título e o texto */
+    opacity: 0.7;
+    font-size: 45px;
+}
+
+.nossas-vantagens p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.imagens-e-textos {
+    display: grid;
+    font-family: 'Montserrat', sans-serif;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    /* Espaçamento entre as imagens e textos */
+    max-width: 1200px;
+    /* Largura máxima do conteúdo */
+    margin: 0 auto;
+    /* Centralize o conteúdo horizontalmente */
+    margin-top: 30px;
+}
+
+.imagem-e-texto {
+    text-align: center;
+    /* Centralize o texto */
+}
+
+.imagem-e-texto p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+
+.titulo-contato {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    /*espessura da fonte do texto */
+
+}
+
+.formula-contato {
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px 60px 60px 60px;
+    /* Espaço ao redor do formulário */
+    max-width: 800px;
+    /* Largura máxima do conteúdo */
+    margin: 0 auto;
+    /* Centralize o conteúdo horizontalmente */
+    background-color: rgb(251, 249, 249);
+    border-radius: 50px;
+    border: 2px solid rgb(4, 231, 4);
+    box-shadow: -4px 7px 10px rgba(206, 197, 197);
+    margin-top: 2vw;
+    margin-top: 100px;
+
+
+}
+
+.linha {
+    display: flex;
+    margin: 10px 0px;
+}
+
+.grupo-formula {
+    flex: 1;
+    margin-right: 80px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: rgb(4, 231, 4);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 350px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(52, 119, 39);
+    transition: 0.5s;
+}
+
+.imagem-contato {
+    float: left;
+    /* Alinhe a imagem à esquerda */
+    margin-right: 20px;
+    /* Adicione espaço à direita da imagem */
+    height: 10px;
+    width: 10px;
+}
+
+.titulo-contato {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    /* Espessura da fonte do texto */
+    margin-left: 60px;
+}
+
+.imagem-contato {
+    /* Alinhe a imagem à esquerda */
+    margin-right: 20px;
+    /* Adicione espaço à direita da imagem */
+    margin-top: 200px;
+    margin-left: 20px;
+}
+
+.perguntas-fre {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    margin-left: 300px;
+}
+
+details,
+summary {
+    outline: none;
+    user-select: none;
+    /*impede o usuário a selecionar o texto  */
+}
+
+details {
+    font-family: 'Montserrat', sans-serif;
+    width: 60%;
+    margin: 10px auto;
+    background-color: rgb(38, 38, 38);
+    color: #fff;
+    padding: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 90;
+    transition: background-color 0.9s ease;
+    /* transição  para a mudança de cor de fundo */
+}
+
+details[open] {
+    background-color: rgb(117, 223, 68);
+    color: rgb(0, 0, 0);
+}
+
+details summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease;
+    /* Adiciona uma transição para a rotação do símbolo */
+}
+
+details summary::after {
+    content: "+";
+    font-size: 30px;
+    transition: transform 0.3s ease;
+    /* Adiciona uma transição para a rotação do símbolo */
+}
+
+details[open] summary::after {
+    transform: rotate(45deg);
+}
+
+.geral-cor {
+    background-color: #f5f5f5;
+    padding: 60px 60px 60px;
+    margin-top: 40px;
+}
+
+.h1-cards {
+    text-align: center;
+}
+
+.h1-cards h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    margin-bottom: 5px;
+    /* Ajuste o espaçamento entre o texto e a imagem conforme necessário */
+}
+
+.h1-cards img {
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    /* Ajuste a largura da imagem conforme necessário */
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1280px;
+    margin: 0 auto;
+    grid-gap: 40px;
+
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 40px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.171);
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    border: 2px solid rgb(4, 231, 4);
+    /* Cor de destaque ao passar o mouse */
+}
+
+
+
+.card h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 5px;
+}
+
+details,
+summary {
+    outline: none;
+    user-select: none;
+    /*impede o usuário a selecionar o texto  */
+}
+
+details {
+    font-family: 'Montserrat', sans-serif;
+    width: 60%;
+    margin: 10px auto;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 90;
+    transition: background-color 0.9s ease;
+    /* transição  para a mudança de cor de fundo */
+}
+
+details[open] {
+    background-color: rgb(117, 223, 68);
+    color: rgb(0, 0, 0);
+}
+
+details summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease;
+    /* Adiciona uma transição para a rotação do símbolo */
+}
+
+details summary::after {
+    content: "+";
+    font-size: 30px;
+    transition: transform 0.3s ease;
+    /* Adiciona uma transição para a rotação do símbolo */
+}
+
+details[open] summary::after {
+    transform: rotate(45deg);
+}
+
+.star {
+    width: 20px;
+}
+
+.card p {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer {
+    background: rgb(0, 0, 0);
+    padding: 30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.footer .row {
+    width: 97%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: gray;
+    font-size: 0.8em;
+
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.2s;
+}
+
+.footer .row a:hover {
+    color: rgb(4, 231, 4);
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
+
+.numuero-footer {
+    font-size: 1.2em;
+    margin: 0% 1%;
+}
+
+.todos-direitos-reservados {
+    margin-left: 80px;
+    text-align: center;
+}
+
+
+
+@media (max-width:720px) {
+    .footer {
+        text-align: left;
+        padding: 9%;
+    }
+
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
+    }
+
+    .footer .row a i {
+        margin: 0% 2%;
+    }
+
+    .todos-direitos-reservados {
+        margin: 0;
+
+    }
+
+    @media screen and (max-width: 768px) {
+        /* mobile */
+
+        .cabecalho {
+            padding: 30px;
+        }
+
+        .cabecalho img {
+            height: 60px;
+            /* Reduzir o tamanho do logo */
+            width: 60px;
+            margin: 0px 0;
+            /* Espaçamento do logo */
+            margin-left: -20px;
+        }
+
+        .menu_esquerda ul,
+        .menu_direita ul {
+            margin: 10px 0;
+            /* Espaçamento entre os itens do menu */
+            justify-content: flex-start;
+            /* Alinhar o conteúdo à esquerda */
+        }
+
+        .menu_esquerda li,
+        .menu_direita li {
+            margin-right: 40px;
+            margin-left: -19px;
+            font-size: 9px;
+            /* Reduzir o tamanho da fonte */
+        }
+
+        .menu_direita {
+            margin-left: 35px;
+            margin-top: 5px;
+
+        }
+
+        .menu_esquerda {
+            margin-left: 0;
+            /* Remover a margem esquerda */
+        }
+
+        .menu_direita {
+            margin-right: 0;
+            /* Remover a margem direita */
+        }
+    }
+
+    #img1,
+    #img2 {
+        width: 75%;
+        /* Reduzir o tamanho das imagens para telas menores */
+        height: auto;
+        /* Manter a proporção da imagem */
+        margin: 5% auto;
+        /* Margens superior e inferior com margem automática nas laterais */
+        display: block;
+        /* Alterar para exibir como bloco */
+        cursor: pointer;
+        margin-top: 300px;
+        margin-left: -30px;
+
+    }
+
+    #coluna2 {
+        width: 100%;
+        /* Ocupar toda a largura disponível */
+        padding: 5% 0;
+        /* Espaçamento interno superior e inferior */
+        margin: 0;
+        /* Resetar margens */
+        float: none;
+        /* Remover float */
+        text-align: center;
+        /* Centralizar as imagens */
+    }
+
+    .coluna1 {
+        width: 70%;
+    }
+
+    .titulo_orçamento {
+        font-size: 28px;
+        /* Reduza o tamanho da fonte do título */
+        margin-bottom: 10px;
+        /* Adicione um espaçamento inferior */
+        margin-left: 30px;
+    }
+
+    .cor-diferente-2 {
+        font-weight: bold;
+        /* Ajuste para o peso da fonte */
+    }
+
+    .Realizar {
+        font-size: 16px;
+        /* Reduza o tamanho da fonte */
+        margin-left: 30px;
+    }
+
+    .Realizar-texto {
+        font-size: 14px;
+        /* Reduza o tamanho da fonte */
+    }
+
+    .garantia {
+        font-size: 0px;
+        /* Reduza o tamanho da fonte */
+        margin-top: 10px;
+        /* Adicione um espaçamento superior */
+        margin-left: 30px;
+    }
+
+    .realizar_orçamento {
+        margin-top: -20px;
+        /* Adicione um espaçamento superior */
+        width: 10%;
+    }
+
+    .realizar_orçamento a {
+        display: inline-block;
+        /* Certifique-se de que o botão se ajuste corretamente */
+    }
+
+    .realizar_orçamento button {
+        font-size: 16px;
+        /* Reduza o tamanho da fonte do botão */
+        padding: 10px 20px;
+        /* Ajuste o preenchimento do botão */
+        width: 160%;
+        margin-left: 30px;
+    }
+
+    .realizar_orçamento img {
+        width: 15px;
+        /* Reduza o tamanho da imagem da seta */
+        margin-left: 5px;
+        /* Adicione um espaçamento à esquerda da imagem */
+    }
+
+    .perguntas-fre {
+        margin-left: 8vw;
+    }
+
+    .cards {
+        display: block;
+    }
+
+    .h1-cards h1 {
+        letter-spacing: 1;
+        font-size: 11vw;
+        max-width: 200;
+        margin-left: 3vw;
+
+    }
+
+    .card {
+        margin-top: 4vw;
+    }
+
+    .oque-podemos {
+        margin: 15px;
+        margin-top: 40vw;
+    }
+
+    .oque-podemos-txt {
+        font-size: 20px;
+    }
+
+    .imagem-grid {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .imagem-container {
+        margin-top: 10px;
+        width: 100%;
+        /* Ocupar toda a largura disponível */
+        border: 5px solid #eee5e5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        /* Espaçamento superior entre os itens */
+        transition: border 0.3s;
+    }
+
+    .imagem-container:hover {
+        border: 3px solid rgb(4, 231, 4);
+    }
+
+    .imagem-container:hover img {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .orcamento-gratis-titulo {
+        margin: 7%;
+        margin-top: -100px;
+    }
+
+    .orcamento-gratis-titulo::before {
+        /* before para adicionar conteúdo antes do conteúdo real */
+        content: '';
+        display: block;
+        width: 30px;
+        /* Largura da barra */
+        height: 7px;
+        /* Altura da barra */
+        border-radius: 30px;
+        background-color: rgb(4, 231, 4);
+        /* Cor da barra */
+        margin-bottom: 5px;
+        /* Espaçamento entre a barra e o texto */
+    }
+
+    .img-e-texto {
+        display: inline-block;
+    }
+
+    .img-e-texto p {
+        font-size: 19px;
+        margin: 7%;
+        margin-top: -5%;
+        width: 85%;
+    }
+
+    .img-e-texto img {
+        margin-top: -10px;
+        width: 80%;
+        margin-left: 20px;
+        border-radius: 10px;
+    }
+
+    .orcamento-gratis-2 {
+        margin-top: 25px;
+    }
+
+    .orcamento-gratis-titulo-2 {
+
+        margin-top: -190px;
+        margin: 7%;
+    }
+
+    .orcamento-gratis-titulo-2::before {
+        content: '';
+        display: block;
+        width: 30px;
+        /* Largura da barra */
+        height: 7px;
+        /* Altura da barra */
+        border-radius: 30px;
+        background-color: rgb(4, 231, 4);
+        /* Cor da barra */
+        margin-bottom: 5px;
+        /* Espaçamento entre a barra e o texto */
+        margin-left: 190px;
+        /* Alinha à direita */
+        margin-right: auto;
+        /* Alinha à esquerda */
+    }
+
+    .realizar_orçamento-2 {
+        margin-left: -150px;
+        margin-top: 10px;
+        width: 55%;
+    }
+
+    .img-e-texto-2 {
+        flex-direction: column-reverse;
+        /* Inverte a ordem dos elementos no eixo principal */
+    }
+
+    .img-e-texto-2 img {
+        margin-top: 10px;
+        width: 0%;
+        margin-left: 20px;
+        border-radius: 10px;
+
+    }
+
+    .separar-2 p {
+        font-size: 19px;
+        margin: 7%;
+        margin-top: -5%;
+        width: 85%;
+    }
+
+    .realizar_orçamento-3 button {
+        margin-top: -10px;
+        margin-left: 20px;
+        width: 45%;
+    }
+
+    .nossas-vantagens {
+        margin-top: 0px;
+    }
+
+    .imagens-e-textos {
+        margin-top: -10px;
+        margin-left: 10px;
+        display: block;
+    }
+
+    /* form */
+
+    .formula-contato {
+        margin-top: 100px;
+        border: 2px solid rgb(4, 231, 4);
+        box-shadow: 0px 4px 4px 4px rgba(206, 197, 197);
+        margin-top: 2vw;
+        width: 60%;
+        border-radius: 5px;
+    }
+
+    .titulo-contato {
+        margin: 0px;
+        font-size: 25px;
+    }
+
+    .linha {
+        display: inline-block;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
+    .grupo-formula {
+        margin-bottom: 20px;
+        /* Espaçamento entre os campos */
+    }
+
+
+    label,
+    input,
+    select {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 10px;
+
+    }
+
+    button {
+        padding: 10px;
+        margin-left: 15px;
+        width: 135%;
+    }
+
+    .hr-fomr {
+        color: rgb(4, 231, 4);
+        width: 100%;
+
+
+    }
+}

@@ -1,0 +1,299 @@
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    
+    display: flex;
+    align-items: center; /* menu fixo no */
+    background-color: rgb(255, 255, 255);/* color de fundo do menu */
+    padding: 0px; /* tamanho menu para baixo */ 
+    position: fixed; /* menu fixo / site */
+    width: 100%;
+    margin-top: 0px; /* margin a cima do menu */
+    top: 0px; /* margin a cima do menu */
+    z-index: 100; /* está garantindo que o txt não entre no menu */
+    
+
+}
+
+.cabecalho::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid rgb(148, 255, 40); /* Cor da linha */
+    box-shadow: 0 2px 2px rgb(243, 239, 239); /* Sombra com cor branca suave */
+     /* Espaço entre o menu e a linha */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.cabecalho img {
+    height: 80px;
+    width: 80px;
+    margin-right: 4vw; /* Espaçamento entre o logo e os menus */
+    margin-left: 0vw;
+    margin-top: 5px;
+    margin-bottom: 4px;
+    align-items: center;  
+}
+
+.menu_esquerda ul {
+    
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-left: 27vw;
+    margin-right: 0.5vw;
+    
+}
+
+.menu_direita ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+   
+    
+}
+
+.menu_esquerda li {
+    margin-right: 3vw;
+    font-weight: bold; /*aumentar a espessura do texto */
+    font-family: 'Montserrat', sans-serif; /*  Montserrat */
+    text-transform: uppercase; /*maiúsculas */
+    letter-spacing: 1px; /* Aumentar o espaçamento entre letras */
+    font-size: 18px;
+    margin-top: 5px;
+   
+
+    
+}
+
+.menu_direita li {
+    margin-right: 3vw;
+    font-weight: bold; /*aumentar a espessura do texto */
+    font-family: 'Montserrat', sans-serif; /*  Montserrat */
+    text-transform: uppercase; /*maiúsculas */
+    letter-spacing: 1px; /* Aumentar o espaçamento entre letras */
+    font-size: 18px;
+}
+    
+
+.menu_esquerda ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.menu_direita ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+    /* Estilo para quando o mouse passa por cima do menu */
+    .menu_esquerda ul li a:hover,
+    .menu_direita ul li a:hover {
+        border-bottom: 4px solid rgb(4, 231, 4); /* Cor da barra verde */
+        color: rgb(4, 231, 4); /* Cor do texto verde */
+    }
+        
+
+    /* Estilo para o menu ativo (quando é clicado) */
+    .menu_esquerda ul li a.ativo,
+    .menu_direita ul li a.ativo {
+        border-bottom: 4px solid rgb(81, 255, 0); /* Cor da barra verde */
+        color: rgb(81, 255, 0); /* Cor do texto verde */
+    }
+
+.txt-de-envio-de-Informações {
+    text-align: center;
+}
+.agrecemos-o-envio {
+    font-size: 50px;
+    font-family: rubik,Sans-serif;
+    font-weight: 600;
+    margin-top: 150px;
+
+}
+
+.txt-de-envio-de-Informações .agrecemos-o-envio {
+    margin-bottom: 06px; /* Adicione margem inferior ao título h2 */
+}
+
+.txt-de-envio-de-Informações p {
+    font-size: 18px;
+    font-family: 'rubik',Sans-serif;
+    margin: 0;
+    line-height: 2.7em;
+    margin-top: 0px;
+    font-weight: 100;
+    
+}
+
+.txt-de-envio-de-Informações img {
+    margin-top: 20px;
+}
+
+.realizar_orçamento button {
+    font-size: 17px;
+    background-color: rgb(9, 216, 9);
+    border-radius: 24px;
+    padding: 13px 30px 13px 35px; /* 10px em cima, 30px à direita, 10px em baixo, 18px à esquerda */
+    color: #fff;
+    margin-left: 5px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    margin-top: 30px;
+} 
+
+.negrito {
+    font-weight: bold;
+}
+
+.footer {
+    background: rgb(0, 0, 0);
+    padding: 30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.footer .row {
+    width: 97%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: gray;
+    font-size: 0.8em;
+
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.2s;
+}
+
+.footer .row a:hover {
+    color: rgb(4, 231, 4);
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
+
+.numuero-footer {
+    font-size: 1.2em;
+    margin: 0% 1%;
+}
+
+.todos-direitos-reservados {
+    margin-left: 80px;
+    text-align: center;
+}
+
+
+
+@media (max-width:720px) {
+    .footer {
+        text-align: left;
+        padding: 9%;
+    }
+
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
+    }
+
+    .footer .row a i {
+        margin: 0% 2%;
+    }
+
+    .todos-direitos-reservados {
+        margin: 0;
+
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .agrecemos-o-envio {
+        font-size: 10vw;
+    }
+
+    .txt-de-envio-de-Informações p {
+        font-size: 4vw;
+        margin: 0;
+        line-height: 2;
+    }
+
+    .cabecalho {
+        padding: 30px;
+    }
+
+    .cabecalho img {
+        height: 50px; /* Reduzir o tamanho do logo */
+        width: 50px;
+        margin: 0px 0; /* Espaçamento do logo */
+        margin-left: -30px;
+    }
+
+    .menu_esquerda ul,
+    .menu_direita ul {
+        margin: 10px 0; /* Espaçamento entre os itens do menu */
+        justify-content: flex-start; /* Alinhar o conteúdo à esquerda */
+    }
+
+    .menu_esquerda li,
+    .menu_direita li {
+        margin-right: 40px;
+        margin-left: -19px;
+        font-size: 9px; /* Reduzir o tamanho da fonte */
+    }
+
+    .menu_direita {
+        margin-left: 35px;
+        margin-top: 13px;
+        
+    } 
+
+    .menu_esquerda {
+        margin-left: 0; /* Remover a margem esquerda */
+    }
+
+    .menu_direita {
+        margin-right: 0; /* Remover a margem direita */
+    }
+    .cabecalho-celular {
+        padding: 10px 0;
+    }
+
+    .cabecalho-celular img {
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}

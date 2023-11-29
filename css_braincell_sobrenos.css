@@ -1,0 +1,594 @@
+body {
+    background-color: rgba(255, 255, 255, 0.833);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+
+    display: flex;
+    align-items: center;
+    /* menu fixo no */
+    background-color: rgb(255, 255, 255);
+    /* color de fundo do menu */
+    padding: 0px;
+    /* tamanho menu para baixo */
+    position: fixed;
+    /* menu fixo / site */
+    width: 100%;
+    margin-top: 0px;
+    /* margin a cima do menu */
+    top: 0px;
+    /* margin a cima do menu */
+    z-index: 100;
+    /* está garantindo que o txt não entre no menu */
+
+
+}
+
+.cabecalho::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid rgb(148, 255, 40);
+    /* Cor da linha */
+    box-shadow: 0 2px 2px rgb(243, 239, 239);
+    /* Sombra com cor branca suave */
+    /* Espaço entre o menu e a linha */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.cabecalho img {
+    height: 80px;
+    width: 80px;
+    margin-right: 4vw;
+    /* Espaçamento entre o logo e os menus */
+    margin-left: 0vw;
+    margin-top: 5px;
+    margin-bottom: 4px;
+    align-items: center;
+}
+
+.menu_esquerda ul {
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-left: 27vw;
+    margin-right: 0.5vw;
+
+}
+
+.menu_direita ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.menu_esquerda li {
+    margin-right: 3vw;
+    font-weight: bold;
+    /*aumentar a espessura do texto */
+    font-family: 'Montserrat', sans-serif;
+    /*  Montserrat */
+    text-transform: uppercase;
+    /*maiúsculas */
+    letter-spacing: 1px;
+    /* Aumentar o espaçamento entre letras */
+    font-size: 18px;
+    margin-top: 5px;
+
+
+
+}
+
+.menu_direita li {
+    margin-right: 3vw;
+    font-weight: bold;
+    /*aumentar a espessura do texto */
+    font-family: 'Montserrat', sans-serif;
+    /*  Montserrat */
+    text-transform: uppercase;
+    /*maiúsculas */
+    letter-spacing: 1px;
+    /* Aumentar o espaçamento entre letras */
+    font-size: 18px;
+}
+
+
+.menu_esquerda ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.menu_direita ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+/* Estilo para quando o mouse passa por cima do menu */
+.menu_esquerda ul li a:hover,
+.menu_direita ul li a:hover {
+    border-bottom: 4px solid rgb(4, 231, 4);
+    /* Cor da barra verde */
+    color: rgb(4, 231, 4);
+    /* Cor do texto verde */
+}
+
+
+/* Estilo para o menu ativo (quando é clicado) */
+.menu_esquerda ul li a.ativo,
+.menu_direita ul li a.ativo {
+    border-bottom: 4px solid rgb(81, 255, 0);
+    /* Cor da barra verde */
+    color: rgb(81, 255, 0);
+    /* Cor do texto verde */
+}
+
+.whatsapp-botao {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-botao img {
+    border-radius: 30px;
+}
+
+.whatsapp-botao:hover {
+    transform: scale(1.1);
+}
+
+.logo-quem-somos {
+    display: flex;
+    margin-top: 130px;
+    font-family: rubik, Sans-serif;
+}
+
+.logo-quem-somos img {
+    height: 100px;
+    width: 100px;
+    margin-top: -4px;
+    margin-left: 180px;
+}
+
+.texto-quem-somos {
+    margin-left: 20px;
+}
+
+.texto-quem-somos h3 {
+    margin-top: 0;
+    /* Remove o espaçamento superior padrão */
+    font-size: 40px;
+    /* Ajuste o tamanho do texto conforme desejado */
+    font-weight: 600;
+    letter-spacing: 2px;
+    opacity: 0.9;
+
+}
+
+.texto-quem-somos p {
+    font-size: 21px;
+    margin-top: -30px;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+.cor-diferente {
+    color: rgb(12, 231, 12);
+    font-weight: 700;
+}
+
+.txt-quem-somos {
+    display: flex;
+    font-family: rubik, Sans-serif;
+    font-size: 21px;
+    margin-top: 10px;
+    opacity: 0.8;
+    font-weight: 500;
+    max-width: 890px;
+    margin-left: 180px;
+    letter-spacing: 1px
+}
+
+.txt-quem-somos img {
+    border-radius: 20px;
+    width: 60%;
+}
+
+.txt_pessoa-consertado {
+    margin-left: 20px;
+    max-width: 900px;
+}
+
+.orcamento-gratis {
+    margin-top: 90px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.orcamento-gratis-titulo {
+    margin-left: 180px;
+    font-size: 44px;
+    letter-spacing: 1.5px;
+}
+
+.img-e-texto {
+    display: inline-flex;
+}
+
+.orcamento-gratis-titulo::before {
+    /* before para adicionar conteúdo antes do conteúdo real */
+    content: '';
+    display: block;
+    width: 30px;
+    /* Largura da barra */
+    height: 7px;
+    /* Altura da barra */
+    border-radius: 30px;
+    background-color: rgb(4, 231, 4);
+    ;
+    /* Cor da barra */
+    margin-bottom: 5px;
+    /* Espaçamento entre a barra e o texto */
+}
+
+
+
+.orcamento-gratis p {
+    margin-left: 180px;
+    max-width: 540px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+
+}
+
+.orcamento-gratis img {
+    border-radius: 20px;
+    margin-left: 50px;
+    width: 50%;
+    margin-top: -90px;
+}
+
+/* texto de baixo (Conserto Rápido) imagem antes do texto */
+
+.orcamento-gratis-2 {
+    margin-top: 80px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.orcamento-gratis-titulo-2::before {
+    /* before para adicionar conteúdo antes do conteúdo real */
+    content: '';
+    display: block;
+    width: 30px;
+    /* Largura da barra */
+    height: 7px;
+    /* Altura da barra */
+    border-radius: 30px;
+    background-color: rgb(4, 231, 4);
+    ;
+    /* Cor da barra */
+    margin-bottom: 5px;
+    /* Espaçamento entre a barra e o texto */
+}
+
+.orcamento-gratis-titulo-2 {
+    margin-left: 100px;
+    font-size: 44px;
+    letter-spacing: 1.5px;
+    margin-top: -10px
+}
+
+.img-e-texto-2 {
+    display: inline-flex;
+
+
+}
+
+.orcamento-gratis-2 p {
+    margin-left: 100px;
+    max-width: 540px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-top: -10px
+}
+
+.orcamento-gratis-2 img {
+    border-radius: 20px;
+    margin-left: 150px;
+    height: 30%;
+    width: 40%;
+
+}
+
+.orcamento-gratis-3 {
+    margin-top: 80px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.orcamento-gratis-titulo-3 {
+    margin-left: 100px;
+    font-size: 44px;
+    letter-spacing: 1.5px;
+    margin-top: -10px
+}
+
+.img-e-texto-3 {
+    display: inline-flex;
+
+
+}
+
+.orcamento-gratis-3 p {
+    margin-left: 100px;
+    max-width: 540px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-top: -10px
+}
+
+.orcamento-gratis-3 img {
+    border-radius: 20px;
+    margin-left: 150px;
+    height: 30%;
+    width: 20%;
+}
+
+.footer {
+    background: rgb(0, 0, 0);
+    padding: 30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.footer .row {
+    width: 97%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: gray;
+    font-size: 0.8em;
+
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.2s;
+}
+
+.footer .row a:hover {
+    color: rgb(4, 231, 4);
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
+
+.numuero-footer {
+    font-size: 1.2em;
+    margin: 0% 1%;
+}
+
+.todos-direitos-reservados {
+    margin-left: 80px;
+    text-align: center;
+}
+
+
+
+@media (max-width:720px) {
+    .footer {
+        text-align: left;
+        padding: 9%;
+    }
+
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
+    }
+
+    .footer .row a i {
+        margin: 0% 3%;
+    }
+
+    .todos-direitos-reservados {
+        margin: 0;
+
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .cabecalho {
+        padding: 30px;
+    }
+
+    .cabecalho img {
+        height: 50px; /* Reduzir o tamanho do logo */
+        width: 50px;
+        margin: 0px 0; /* Espaçamento do logo */
+        margin-left: -30px;
+    }
+
+    .menu_esquerda ul,
+    .menu_direita ul {
+        margin: 10px 0; /* Espaçamento entre os itens do menu */
+        justify-content: flex-start; /* Alinhar o conteúdo à esquerda */
+    }
+
+    .menu_esquerda li,
+    .menu_direita li {
+        margin-right: 40px;
+        margin-left: -19px;
+        font-size: 9px; /* Reduzir o tamanho da fonte */
+    }
+
+    .menu_direita {
+        margin-left: 35px;
+        margin-top: 13px;
+        
+    } 
+
+    .menu_esquerda {
+        margin-left: 0; /* Remover a margem esquerda */
+    }
+
+    .menu_direita {
+        margin-right: 0; /* Remover a margem direita */
+    }
+    .cabecalho-celular {
+        padding: 10px 0;
+    }
+
+    .cabecalho-celular img {
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .logo-quem-somos {
+        margin-top: 40%;
+        margin-left: -140px;
+    }
+
+    .texto-quem-somos h3 {
+        font-size: 6vw;
+    }
+
+    .logo-quem-somos img {
+        height: 60%;
+        width: 10%;
+        margin-top: 1vw
+    }
+
+    .texto-quem-somos p {
+        font-size: 4.5vw;
+        margin-top: -3vw;
+        max-width: 60vw;
+    }
+
+    .orcamento-gratis-3 img {
+        width: 40%;
+        height: 40%;
+        margin-left: 70vw;
+    }
+
+    .orcamento-gratis-3 {
+        margin-left: -50vw;
+        display: inline-block;
+        margin-top: 10vw;
+    }
+
+    .orcamento-gratis-3 p {
+        margin-left: 60vw;
+        font-size: 5.0vw;
+    }
+
+
+    .img-e-texto-3 {
+        display: inline-block;
+    }
+
+    /* Seções de orcamento-gratis */
+    .orcamento-gratis,
+    .orcamento-gratis-2 {
+        margin-top: 40px;
+    }
+
+    .img-e-texto-2 {
+        display: inline-block;
+        display: block;
+    }
+
+    .orcamento-gratis-titulo,
+    .orcamento-gratis-titulo-2 {
+        margin-left: 5%;
+        font-size: 8vw;
+    }
+
+    .orcamento-gratis p {
+        margin-left: 5%;
+        font-size: 2vw;
+        line-height: 6vw;
+        display: inline;
+    }
+
+    .img-e-texto-2 img {
+        text-align: center;
+        width: 0%
+    }
+
+    .img-e-texto-2 p {
+        margin-left: 5%;
+        font-size: 4vw;
+        line-height: 6vw;
+
+    }
+
+    .orcamento-gratis img {
+        margin-left: 10%;
+        width: 30%;
+        height: 40vw;
+        margin-top: -20vw;
+    }
+
+    .img-e-texto img {
+        margin-left: -10%;
+    }
+
+    .orcamento-gratis .img-e-texto {
+        flex-direction: column-reverse;
+        /* Reorganiza a direção dos elementos em telas menores */
+        align-items: center;
+    }
+
+    .orcamento-gratis .img-e-texto img {
+        width: 100%;
+        /* Ajusta a largura da imagem */
+        max-width: 80%;
+        /* Define a largura máxima para a imagem */
+        margin-top: -0px;
+        /* Espaçamento entre texto e imagem */
+    }
+
+    .orcamento-gratis p {
+        margin-left: 5%;
+        font-size: 4vw;
+        line-height: 6vw;
+        margin-bottom: 20px;
+        /* Espaçamento entre parágrafos e imagens */
+    }
+}

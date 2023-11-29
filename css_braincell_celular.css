@@ -1,0 +1,995 @@
+body {
+    background-color: rgb(255, 255, 255);;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.cabecalho {
+    
+    display: flex;
+    align-items: center; /* menu fixo no */
+    background-color: rgb(255, 255, 255);/* color de fundo do menu */
+    padding: 0px; /* tamanho menu para baixo */ 
+    position: fixed; /* menu fixo / site */
+    width: 100%;
+    margin-top: 0px; /* margin a cima do menu */
+    top: 0px; /* margin a cima do menu */
+    z-index: 100; /* está garantindo que o txt não entre no menu */
+    
+
+}
+
+.cabecalho::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid rgb(148, 255, 40); /* Cor da linha */
+    box-shadow: 0 2px 2px rgb(243, 239, 239); /* Sombra com cor branca suave */
+     /* Espaço entre o menu e a linha */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.cabecalho img {
+    height: 80px;
+    width: 80px;
+    margin-right: 4vw; /* Espaçamento entre o logo e os menus */
+    margin-left: 0vw;
+    margin-top: 5px;
+    margin-bottom: 4px;
+    align-items: center;  
+}
+
+.menu_esquerda ul {
+    
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-left: 27vw;
+    margin-right: 0.5vw;
+    
+    
+}
+
+.menu_direita ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+   
+    
+}
+
+.menu_esquerda li {
+    font-weight: bold; /*aumentar a espessura do texto */
+    margin-right: 3vw;
+    font-family: 'Montserrat', sans-serif; /*  Montserrat */
+    text-transform: uppercase; /*maiúsculas */
+    letter-spacing: 1px; /* Aumentar o espaçamento entre letras */
+    font-size: 18px;
+    margin-top: 5px;
+
+}
+.menu_direita li {
+    margin-right: 3vw;
+    font-weight: bold; /*aumentar a espessura do texto */
+    font-family: 'Montserrat', sans-serif; /*  Montserrat */
+    text-transform: uppercase; /*maiúsculas */
+    letter-spacing: 1px; /* Aumentar o espaçamento entre letras */
+    font-size: 18px;
+
+}
+    
+
+.menu_esquerda ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.menu_direita ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+    /* Estilo para quando o mouse passa por cima do menu */
+    .menu_esquerda ul li a:hover,
+    .menu_direita ul li a:hover {
+        border-bottom: 4px solid rgb(4, 231, 4); /* Cor da barra verde */
+        color: rgb(4, 231, 4); /* Cor do texto verde */
+    }
+        
+
+    /* Estilo para o menu ativo (quando é clicado) */
+    .menu_esquerda ul li a.ativo,
+    .menu_direita ul li a.ativo {
+        border-bottom: 4px solid rgb(81, 255, 0); /* Cor da barra verde */
+        color: rgb(81, 255, 0); /* Cor do texto verde */
+    }
+
+    .header-preto {
+        background-color: black; /* Define o fundo como preto */
+        color: white; /* Define a cor do texto como branca */
+    }
+    
+    .cabecalho-celular {
+        display: flex;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+        padding: 0px;
+        width: 100%;
+        height: 120px; /* Ajuste para cobrir toda a altura da tela */
+        top: 0px;
+        padding-bottom: 0.5vw;
+        margin-top: 92px; /* Você pode ajustar isso conforme necessário */
+    }
+    
+.conserto-celular {
+    font-size: 55px;
+    letter-spacing: 1.5px;
+    font-family: 'Montserrat', sans-serif; /*  Montserrat */
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    color:  rgb(255, 255, 255);;
+    font-weight: 600;
+}
+
+.reparo-celular {
+    margin-top: 140px;
+    margin-left: 140px;
+    font-size: 5px;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.reparo-linha {
+    display: flex;
+    flex-direction: column;
+    font-family: 'rubik',Sans-serif;
+    color: rgb(4, 231, 4);;
+    font-size: 35px;
+    line-height: 1.1em;
+    font-weight: 600;
+}
+
+.feature {
+    font-family:Sans-serif;
+    background-color: white; /* Cor de fundo do retângulo */
+    color:#000000;
+    padding: 13px; /* Espaçamento interno do retângulo */
+    width: 100%; /* Ocupar a largura total da seção pai */
+    margin: 10px 0; /* Espaço vertical entre os retângulos */
+    border: 1px solid rgb(236, 227, 227); /* Borda preta ao redor do retângulo */
+    box-shadow: 2px 2px 5px rgb(206, 197, 197); /* Sombra com cor branca suave */
+}
+
+.mais-degrito {
+    font-family: 'rubik',Sans-serif;
+    font-weight: 900;
+}
+
+.feature p {
+    margin: 0; /* Remover margem interna dos parágrafos */
+    font-size: 22px; /* Tamanho da fonte */
+}
+
+.segura-dispositivo {
+    font-family: rubik,Sans-serif;
+    opacity: 0.9;
+}
+
+.realizar_orçamento button {
+    font-size: 17px;
+    background-color: rgb(4, 231, 4);
+    border-radius: 24px;
+    padding: 13px 30px 13px 35px; /* 10px em cima, 30px à direita, 10px em baixo, 18px à esquerda */
+    color: #fff;
+    margin-left: 0px;
+    cursor: pointer;
+    margin-bottom: 40px;
+
+
+}
+.whatsapp-button {
+    position: fixed;
+     bottom: 20px;
+     right: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-button img {
+    border-radius: 30px;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+.realizar_orçamento button:hover {
+
+    background: rgb(52, 119, 39);
+    transition: 1s;
+}
+
+.realizar_orçamento img {
+    margin-left: 10px; /* Adicionar margem à esquerda da imagem */
+    height: 15px; /* Definir a altura da imagem */
+    width: 15px; /* Definir a largura da imagem */
+}
+
+.realizar_orçamento-5 button {
+    font-size: 15px;
+    background-color: rgb(4, 231, 4);
+    border-radius: 24px;
+    padding: 13px 30px 13px 35px; /* 10px em cima, 30px à direita, 10px em baixo, 18px à esquerda */
+    color: #fff;
+    margin-left: 0px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.realizar_orçamento-5 button:hover {
+
+    background: rgb(52, 119, 39);
+    transition: 1s;
+}
+
+.realizar_orçamento-5 img {
+    margin-left: 10px; /* Adicionar margem à esquerda da imagem */
+    height: 15px; /* Definir a altura da imagem */
+    width: 15px; /* Definir a largura da imagem */
+}
+
+.seta-img {
+    margin-top: -3px; 
+    vertical-align: middle; /* Alinhar verticalmente com o texto */
+}
+
+.reparo-celular:nth-child(2) {
+    text-align: center; /* Centraliza o texto dentro do elemento */
+    border: 2px solid rgb(236, 227, 227); /* Borda preta ao redor do retângulo */
+    box-shadow: 7px 5px 30px rgb(206, 197, 197); /* Sombra com cor branca suave */
+    width: 60%;
+    border-radius: 10px;
+}
+
+.cor-diferente{
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+
+.cor-diferente-2 {
+    color: rgb(12, 231, 12);
+}
+
+.geral-reparo-celular{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: -7px; /* Espaçamento entre as colunas */
+    margin-top: -70px;
+
+}
+
+.hoje-mesmo {
+    font-family:rubik,Sans-serif; 
+    font-size: 1.75rem;
+    font-weight: bold;
+
+}
+
+.hoje-mesmo span {
+    display: inline;
+    margin: 0;
+
+    
+}
+
+.hoje-mesmo span:nth-child(2) {
+    margin: 0;
+
+}
+
+.hoje-mesmo img {
+    display: block; /* Torna a imagem um bloco para posicioná-la acima do texto */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    width: 50px; 
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 25px; /* Adiciona espaço abaixo da imagem */
+}
+
+.txt-hoje {
+    font-size: 19px;
+    font-family:'rubik',Sans-serif; 
+    margin: 0;
+    letter-spacing: 0.4px; /* espaço entre as letras */
+    margin-bottom: 20px;
+}
+
+.nossos-servicos {
+    margin-top: 130px;
+    font-size: 60px;
+    letter-spacing: 3.5px;
+    font-family: 'rubik',Sans-serif;
+    margin-left: 150px;
+    letter-spacing: 0.5px;
+}
+
+.geral-caca {
+    align-items: center;
+    justify-self: center;
+    margin-top: 00px;
+    
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+
+}
+
+.slider{
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 70%;
+}
+
+.slider .slide-track {
+    animation: scroll 16s linear infinite;
+    display: flex;
+    width: calc(250 * 1400);
+}
+
+.slider .slide {
+    height: 100px;
+    width: 750px;
+}
+
+.slide {
+    margin-left: 100px;
+}
+
+.imagens-e-textos {
+    display: grid;
+    font-family: 'Montserrat', sans-serif;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px; /* Espaçamento entre as imagens e textos */
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centralize o conteúdo horizontalmente */
+    margin-top: 30px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.imagem-e-texto {
+    text-align: center; /* Centralize o texto */
+    border: 3px solid rgb(236, 227, 227); /* Borda preta ao redor do retângulo */
+    margin-bottom: 40px;
+    
+}
+
+
+
+.imagem-e-texto p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+
+.titulo-contato {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 500; /*espessura da fonte do texto */
+}
+
+.imagem-e-texto-primeiro {
+    text-align: center; /* Centralize o texto */
+    border: 3px solid rgb(236, 227, 227); /* Borda preta ao redor do retângulo */
+    margin-bottom: 40px;
+    border-top-left-radius: 30px; /* Define a dobra no canto superior esquerdo */
+    font-size: 17px;
+}
+
+.imagem-com-margem-superior {
+    margin-top: 30px;
+}
+
+.imagem-e-texto-segundo {
+    text-align: center; /* Centralize o texto */
+    border: 3px solid rgb(236, 227, 227); /* Borda preta ao redor do retângulo */
+    margin-bottom: 40px;
+    font-size: 17px;
+    border-top-right-radius: 30px;
+}
+
+.imagem-e-texto-terceira {
+    text-align: center; /* Centralize o texto */
+    border: 3px solid rgb(236, 227, 227); /* Borda preta ao redor do retângulo */
+    margin-bottom: 40px;
+    font-size: 17px;
+    border-bottom-left-radius: 30px; /* Define a dobra no canto inferior esquerdo */
+}
+
+.imagem-e-texto-quarto {
+    text-align: center; /* Centralize o texto */
+    border: 3px solid rgb(236, 227, 227); /* Borda preta ao redor do retângulo */
+    margin-bottom: 40px;
+    font-size: 17px;
+    border-bottom-right-radius: 30px;
+}
+.formula-contato {
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px 60px 60px 60px; /* Espaço ao redor do formulário */
+    max-width: 800px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centralize o conteúdo horizontalmente */
+    background-color: rgb(251, 249, 249);
+    border-radius: 50px;
+    border: 2px solid  rgb(4, 231, 4);
+    box-shadow: -4px 7px 10px rgba(206, 197, 197);
+    margin-top: 2vw;
+    margin-top: 100px;
+
+}
+
+.linha {
+    display: flex;
+    margin: 10px 0px;
+}
+
+.grupo-formula {
+    flex: 1;
+    margin-right: 80px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: rgb(4, 231, 4);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 350px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(52, 119, 39);
+    transition: 0.5s;
+}
+
+.imagem-contato {
+    float: left; /* Alinhe a imagem à esquerda */
+    margin-right: 20px; /* Adicione espaço à direita da imagem */
+    height: 10px;
+    width: 10px;
+}
+
+.titulo-contato {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 500; /* Espessura da fonte do texto */
+    margin-left: 60px;
+}
+
+.imagem-contato {
+     /* Alinhe a imagem à esquerda */
+    margin-right: 20px; /* Adicione espaço à direita da imagem */
+    margin-top: 200px;
+    margin-left: 20px;
+}
+
+.oque-podemos {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 290px;
+    margin-top: 75px;
+    letter-spacing: 1px;
+}
+
+
+details, summary {
+    outline: none;
+    user-select: none; /*impede o usuário a selecionar o texto  */
+}
+
+details {
+    font-family: 'Montserrat', sans-serif; 
+    width: 60%;
+    margin: 10px auto;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 90;
+    transition: background-color 0.9s ease; /* transição  para a mudança de cor de fundo */
+}
+
+details[open] {
+    background-color: rgb(117, 223, 68);
+    color: rgb(0, 0, 0);
+}
+
+details summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease; /* Adiciona uma transição para a rotação do símbolo */
+}
+
+details summary::after {
+    content: "+";
+    font-size: 30px;
+    transition: transform 0.3s ease; /* Adiciona uma transição para a rotação do símbolo */
+}
+
+details[open] summary::after {
+    transform: rotate(45deg);
+}
+
+.geral-cor {
+    margin-top: 80px;
+    background-color: #f5f5f5;
+    padding: 15px 15px;
+}
+
+.h1-cards {
+    text-align: center;
+  }
+  
+  .h1-cards h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    margin-bottom: 5px; /* Ajuste o espaçamento entre o texto e a imagem conforme necessário */
+  }
+  
+  .h1-cards img {
+    display: block;
+    margin: 0 auto;
+    width: 50px; /* Ajuste a largura da imagem conforme necessário */
+  }
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 1280px;
+    margin: 0 auto;
+    grid-gap: 40px;
+
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 40px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.171);
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    border: 2px solid  rgb(4, 231, 4); /* Cor de destaque ao passar o mouse */
+}
+
+
+
+.card h3 {
+    font-family: 'Montserrat', sans-serif; 
+    margin-bottom: 5px;
+}
+
+.star {
+    width: 20px;
+}
+
+.card p {
+    margin-top: 20px;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+
+.cor-diferente-2 {
+    color: rgb(12, 231, 12);
+    font-weight: 900;
+}
+
+
+.footer{
+    background: rgb(0, 0, 0);
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    margin-top: 100px;
+    
+    }
+    
+    .footer .row{
+    width:97%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:#ffffff;
+    transition:0.2s;
+    }
+
+    .footer .row a:hover{
+    color:rgb(4, 231, 4);
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+
+    .numuero-footer {
+        font-size:1.2em;
+        margin:0% 1%;
+    }
+
+    .todos-direitos-reservados {
+        margin-left: 80px;
+        text-align: center;
+    }
+
+
+
+    @media (max-width:720px) {
+    .footer{
+    text-align:left;
+    padding:9%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+
+    .footer .row a i{
+    margin:0% 3%;
+    }
+
+    .todos-direitos-reservados {
+        margin: 0;
+
+    }
+
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 14px; /* Tamanho da fonte menor */
+    }
+
+    .cabecalho {
+        padding: 30px;
+    }
+
+    .cabecalho img {
+        height: 60px; /* Reduzir o tamanho do logo */
+        width: 60px;
+        margin: 0px 0; /* Espaçamento do logo */
+        margin-left: -30px;
+    }
+
+    .menu_esquerda ul,
+    .menu_direita ul {
+        margin: 10px 0; /* Espaçamento entre os itens do menu */
+        justify-content: flex-start; /* Alinhar o conteúdo à esquerda */
+    }
+
+    .menu_esquerda li,
+    .menu_direita li {
+        margin-right: 40px;
+        margin-left: -19px;
+        font-size: 9px; /* Reduzir o tamanho da fonte */
+    }
+
+    .menu_direita {
+        margin-left: 35px;
+        margin-top: 13px;
+        
+    } 
+
+    .menu_esquerda {
+        margin-left: 0; /* Remover a margem esquerda */
+    }
+
+    .menu_direita {
+        margin-right: 0; /* Remover a margem direita */
+    }
+    .cabecalho-celular {
+        padding: 1% 0;
+    }
+
+    .cabecalho-celular img {
+        height: 60px;
+        width: 60px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .conserto-celular {
+        font-size: 110%;
+        align-items: center;
+    }
+
+    .reparo-celular {
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 86%;
+    }
+
+    .reparo-linha {
+        font-size: 20px;
+        margin-top: 80px;
+        font-weight: 700;
+    }
+
+    .feature {
+        font-size: 14px;
+        padding: 8px;
+        
+    }
+
+    .feature p {
+        font-size: 14px;
+        
+    }
+
+    .reparo-celular:nth-child(2) {
+        margin-top: 50px;
+        margin-left: 16px;
+        width: 90%;
+
+    }
+
+    .segura-dispositivo {
+        font-size: 14px;
+        font-weight: 600;
+
+    }
+
+    .realizar_orçamento button {
+        font-size: 14px;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        width: 50%;
+    }
+
+    .whatsapp-button {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .nossos-servicos {
+        font-size: 30px;
+    }
+
+    .whatsapp-button img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .geral-reparo-celular {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .hoje-mesmo {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .hoje-mesmo img {
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .txt-hoje {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .servicos-smartphone {
+        margin-top: 1vw;
+    }
+
+    .servicos-smartphone img {
+        margin: 10px;
+        margin-top: 5px;
+    }
+
+    .imagens-e-textos {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        width: 87%;
+        
+    }
+
+    .imagem-e-texto {
+        margin-top: -40px;
+    }
+
+    .imagem-com-margem-superior {
+        margin-top: 10px;
+    }
+
+    .imagem-e-texto-segundo {
+        border-radius: 0%;
+        margin-top: -10%;
+    }
+
+    .imagem-e-texto-terceira {
+        border-radius: 0%;
+        margin-top: -10%;
+    }
+
+    .imagem-e-texto-quarto {
+        border-radius: 0%;
+        margin-top: -10%;
+    }
+
+    .nossos-servicos {
+        font-size: 6vw;
+        margin-top: 15vw;
+        margin-left: 17vw;
+    }
+
+    .oque-podemos {
+        margin-left: 10vw;
+    }
+    .oque-podemos h2 {
+        font-size: 4vw;
+    }
+
+    details, summary {
+        outline: none;
+        user-select: none; /*impede o usuário a selecionar o texto  */
+    }
+    
+    details {
+        font-family: 'Montserrat', sans-serif; 
+        width: 70%;
+        margin: 10px auto;
+        background-color: rgb(38, 38, 38);
+        color: #fff;
+        padding: 20px;
+        font-size: 4vw;
+        cursor: pointer;
+        border-radius: 10px;
+        font-weight: 90;
+    }
+
+    .imagem-e-texto-primeiro {
+        border-radius: 0px;
+    }
+
+
+    .realizar_orçamento-5 {
+        margin-left: 30px;
+    }
+
+    
+    .formula-contato {
+        margin-top: 100vw;
+        border: 2px solid  rgb(4, 231, 4);
+        box-shadow: 0px 4px 4px 4px rgba(206, 197, 197);
+        margin-top: 2vw;
+        width: 55%;
+        border-radius:5vw;
+    }
+
+    .titulo-contato{
+        margin: 0px;
+        font-size: 6vw;
+    }
+
+    .linha {
+        display: inline-block;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
+    .grupo-formula {
+        margin-bottom: 20px; /* Espaçamento entre os campos */
+    }
+
+
+    label, input, select {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 10px;
+
+    }
+
+    button {
+        padding: 10px;
+        margin-left: 15px;
+        width: 135%;
+    }
+    
+    .hr-fomr {
+        color: rgb(4, 231, 4);
+        width: 100%;
+    }
+
+    .geral-cor {
+        background-color: #f5f5f5;
+    }
+    
+    .cards {
+        display: block;
+    }
+
+    .h1-cards h1  {
+        font-size: 10vw;
+        margin-top: 0vw;
+    }
+
+    .card {
+        margin-top: 10vw;
+        width: 78%;
+    }
+}
+
+
+
+  

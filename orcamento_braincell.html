@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>BRAIN CELL / Orçamento</title>
+    <link rel="shortcut icon" href="LOGO.ico" type="image/x-icon">
+    <link rel="stylesheet" href="orcamento_braincell.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <section class="formulario">
+        <div class="comeco-logo-orcamento">
+            <a href="BRAIN CELL (3).html">
+                <img src="LOGO.png" alt="Faça já o seu orçamento!">
+            </a>
+        </div>
+        <h2>Faça já o seu <span class="cor-diferente-2"> orçamento!</span></h2>
+        <form action="processar_formulario.php" method="post">
+            <div class="campo">
+                <label for="nome_completo">Nome Completo:</label>
+                <input type="text" id="nome_completo" name="nome_completo" placeholder="Seu nome completo" required>
+            </div>
+            <div class="campo">
+                <label for="nome_completo">CPF:</label>
+                <input type="text" id="cpf" name="cpf" placeholder="CPF" required>
+            </div>
+            <div class="campo">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail para orçamento" required>
+            </div>
+            <div class="campo">
+                <label for="confirmar_email">Confirmar E-mail:</label>
+                <input type="email" id="confirmar_email" name="confirmar_email" placeholder="Confirme o seu e-mail" required oninput="validarEmail()">
+                <small id="emailMatch" style="display: none; color: red;">Os endereços de e-mail não coincidem.</small>
+            </div>
+            <div class="campo">
+                <label for="numero_whatsapp">WhatsApp:</label>
+                <input type="tel" id="numero_whatsapp" name="numero_whatsapp" placeholder="Seu WhatsApp para contato (apenas números)" pattern="[0-9]{8,14}" title="Digite um número de telefone válido (de 8 a 14 dígitos)" required>
+            </div>
+            
+            <div class="campo">
+                <label for="tipo_aparelho">Tipo de Aparelho com defeito: <span class="obrigatorio">*</span></label>
+                <select id="tipo_aparelho" name="tipo_aparelho" required>
+                    <option value="celular_smartphone">Celular / Smartphone</option>
+                    <option value="notebook">Notebook</option>
+                    <option value="tablet">Tablet</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="marca_aparelho">Marca do Aparelho com defeito: <span class="obrigatorio">*</span></label>
+                <select id="marca_aparelho" name="marca_aparelho" required>
+                    <option value="apple">Apple</option>
+                    <option value="motorola">Motorola</option>
+                    <option value="samsung">Samsung</option>
+                    <option value="asus">Asus</option>
+                    <option value="lg">LG</option>
+                    <option value="xiaomi">Xiaomi</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="modelo_aparelho">Modelo do Aparelho</label>
+                <input type="text" id="modelo_aparelho" name="modelo_aparelho" placeholder="Modelo do aparelho" required>
+            </div>
+            <div class="campo">
+                <label for="descricao_problema">Descrição do Problema:</label>
+                <textarea id="descricao_problema" name="descricao_problema" placeholder="Descreva o defeito e informações úteis" required></textarea>
+            </div>
+            <div class="campo">
+                <a href="orcamentorealizado.css">
+                    <button type="submit" class="botao">Enviar Solicitação</button>
+                </a>
+            </div>
+        </form>
+    </section>
+    <script>
+        function validarEmail() {
+            var email = document.getElementById('email');
+            var confirmarEmail = document.getElementById('confirmar_email');
+            var emailMatch = document.getElementById('emailMatch');
+    
+            if (email.value !== confirmarEmail.value) {
+                emailMatch.style.display = 'block';
+                confirmarEmail.setCustomValidity('Os endereços de e-mail não coincidem.');
+            } else {
+                emailMatch.style.display = 'none';
+                confirmarEmail.setCustomValidity('');
+            }
+        }
+    </script>
+    
+
+
+
+    <div class="geral-cor">
+        <section class="reparo">
+            <div class="reparos">
+                <img src="smartphone(2).png">
+                <h3>Reparo de Celulares </h3>
+                <p>Velocidade e Excelência </p>
+            </div>
+    
+            <div class="reparos">
+                <img src="laptop(1).png">
+                <h3>Manutenção de Notebooks </h3>
+                <p>Seu notebook em boas mãos!</p>
+            </div>
+    
+            <div class="reparos">
+                <img src="tablet(2).png">
+                <h3>Manutenção de Tablets</h3>
+                <p>Proteção confiável para o seu dispositivo.</p>
+            </div>
+        </section>
+
+    <div class="conserto">
+        <h2>Conserto Rápido</h2>
+        <p>Nosso sistema de agendamento e orçamento online agiliza a execução dos reparos. 
+            Reconhecemos a relevância do seu dispositivo para você, comprometendo-nos a retorná-lo rapidamente e a 
+            mantê-lo informado em todas as etapas da restauração. A maioria dos serviços de reparo é concluída em até 60 minutos!
+        </p>
+    </div>
+
+    <section class="cards">
+        <div class="card">
+            <h3>Gabriel Oliveira</h3>
+            <div class="stars">
+                <img class="star" src="star.svg" alt="estrela">
+                <img class="star" src="star.svg" alt="estrela">
+                <img class="star" src="star.svg" alt="estrela">
+                <img class="star" src="star.svg" alt="estrela">
+                <img class="star" src="star.svg" alt="estrela">
+            </div>
+            
+            <p>"Excelente atendimento! Mesmo com um problema mais complexo, a equipe foi incansável em resolver. Com certeza recomendo pela dedicação e competência."</p>
+        </div>
+
+        <div class="card">
+            <h3>Lucas Oliveira</h3>
+            <div class="stars">
+                <img class="star" src="star.svg" alt="estrela">
+                <img class="star" src="star.svg" alt="estrela">
+                <img class="star" src="star.svg" alt="estrela">
+                <img class="star" src="star.svg" alt="estrela">
+                <img class="star" src="star.svg" alt="estrela">
+            </div>
+            
+            <p>"Estou extremamente satisfeito com a assistência técnica. O orçamento foi oferecido de forma gratuita e a rapidez com que resolveram a questão do meu Motorola foi impressionante. Recomendo totalmente!"</p>
+        </div>
+
+        <div class="card">
+            <h3>Patrícia Lima</h3>
+            <div class="stars">
+                <img class="star" src="star.svg" alt="estrela">
+                <img class="star" src="star.svg" alt="estrela">
+                <img class="star" src="star.svg" alt="estrela">
+                <img class="star" src="star.svg" alt="estrela">
+                <img class="star" src="starlimpo.png" alt="estrela">
+            </div>
+            
+            <p>"Recebi um orçamento gratuito para meu iPhone 12, o que foi muito útil. A solução do problema foi rápida, embora tenha havido uma pequena demora no atendimento inicial. No geral, foi uma boa experiência."</p>
+        </div>
+    </section>
+
+    <div class="footer">
+        <p>© 2023 BRAIN CELL Todos os direitos reservados.</p>
+      </div>
+</body>
+
+</html>
+

@@ -1,0 +1,308 @@
+body {
+    background-color: #e6e5e5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+
+
+}
+
+.comeco-logo-orcamento {
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.comeco-logo-orcamento img {
+    width: 10%;
+
+}
+
+.comeco-logo-orcamento h2 {
+    margin: 10px 0;
+    font-weight: bold;
+    margin-left: 210px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: 600;
+    font-size: 38px;
+    color: #fff;
+}
+
+.cor-diferente-2 {
+    color: rgb(12, 231, 12);
+    font-weight: 800;
+}
+
+.formulario {
+    font-family: 'Montserrat', sans-serif;
+    width: 70%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 6px 6px 40px rgba(0, 0, 0, 0.171);
+}
+
+.formulario h2 {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-style: 800;
+    font-size: 38px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    /* Outros estilos desejados */
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.obrigatorio {
+    font-size: 22px;
+    color: red;
+}
+
+.geral-cor {
+    background-color: #f5f5f5;
+    padding: 60px 60px 60px;
+    margin-top: 40px;
+}
+
+.reparo  {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 1000px;
+    margin: 0 auto;
+    grid-gap: 40px;
+}
+
+.reparos {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 40px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.171);
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.reparos:hover {
+    transform: scale(1.05);
+    border: 2px solid  rgb(4, 231, 4); /* Cor de destaque ao passar o mouse */
+}
+
+
+
+.reparos h3 {
+    font-family: 'Montserrat', sans-serif; 
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.reparos p {
+    margin-top: 20px;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.conserto {
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 110px;
+}
+
+.conserto p {
+    max-width: 1400px;
+}
+
+.geral-cor {
+    background-color: #f5f5f5;
+    padding: 60px 60px 60px;
+    margin-top: 40px;
+}
+
+.h1-cards {
+    text-align: center;
+  }
+  
+  .h1-cards h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    margin-bottom: 5px; /* Ajuste o espaçamento entre o texto e a imagem conforme necessário */
+  }
+  
+  .h1-cards img {
+    display: block;
+    margin: 0 auto;
+    width: 50px; /* Ajuste a largura da imagem conforme necessário */
+  }
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 1280px;
+    margin: 0 auto;
+    grid-gap: 40px;
+
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 40px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.171);
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    border: 2px solid  rgb(4, 231, 4); /* Cor de destaque ao passar o mouse */
+}
+
+
+
+.card h3 {
+    font-family: 'Montserrat', sans-serif; 
+    margin-bottom: 5px;
+}
+
+.star {
+    width: 20px;
+}
+
+.card p {
+    margin-top: 20px;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer {
+    margin-top: 100px;
+    position: absolute;
+    left: 0;
+    bottom: 20;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    font-family:'Play', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+
+    .comeco-logo-orcamento img {
+        width: 25%;
+        margin: 0;
+        margin-left: 27vw;
+    }
+
+    .formulario {
+        border-radius: 3vw;
+        width: 80%;
+    }
+
+    .geral-cor {
+        margin-left: -7vw;
+    }
+
+    .reparo {
+        display: inline-block;
+
+    }
+
+    .reparos {
+        width: 83%;
+        border-radius: 5vw;
+        margin-top: 5vw;
+    }
+
+    .conserto  {
+        margin-top: 0vw;
+    }
+    
+    .conserto h2 {
+        margin-left: 11vw;
+        font-size: 10vw;
+    }
+
+    .conserto p {
+        margin-left: 11vw;
+        max-width: 900;
+        font-size: 5vw;
+    }
+
+    .cards {
+        display: block;
+    }
+
+    .card {
+        margin-top: 4vw;
+        width: 83%;
+    }
+
+    .footer {
+        font-size: 4vw;
+    }
+
+    form label {
+        font-size: 4.5vw;
+    }
+}
+
+
+
+
+
+
+
+
+

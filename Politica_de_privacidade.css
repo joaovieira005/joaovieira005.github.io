@@ -1,0 +1,358 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    
+    display: flex;
+    align-items: center; /* menu fixo no */
+    background-color: rgb(255, 255, 255);/* color de fundo do menu */
+    padding: 0px; /* tamanho menu para baixo */ 
+    position: fixed; /* menu fixo / site */
+    width: 100%;
+    margin-top: 0px; /* margin a cima do menu */
+    top: 0px; /* margin a cima do menu */
+    z-index: 100; /* está garantindo que o txt não entre no menu */
+    
+
+}
+
+.cabecalho::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid rgb(148, 255, 40); /* Cor da linha */
+    box-shadow: 0 2px 2px rgb(243, 239, 239); /* Sombra com cor branca suave */
+     /* Espaço entre o menu e a linha */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.cabecalho img {
+    height: 80px;
+    width: 80px;
+    margin-right: 4vw; /* Espaçamento entre o logo e os menus */
+    margin-left: 0vw;
+    margin-top: 5px;
+    margin-bottom: 4px;
+    align-items: center;  
+}
+
+.menu_esquerda ul {
+    
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-left: 27vw;
+    margin-right: 0.5vw;
+    
+}
+
+.menu_direita ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+   
+    
+}
+
+.menu_esquerda li {
+    margin-right: 3vw;
+    font-weight: bold; /*aumentar a espessura do texto */
+    font-family: 'Montserrat', sans-serif; /*  Montserrat */
+    text-transform: uppercase; /*maiúsculas */
+    letter-spacing: 1px; /* Aumentar o espaçamento entre letras */
+    font-size: 18px;
+    margin-top: 5px;
+   
+
+    
+}
+
+.menu_direita li {
+    margin-right: 3vw;
+    font-weight: bold; /*aumentar a espessura do texto */
+    font-family: 'Montserrat', sans-serif; /*  Montserrat */
+    text-transform: uppercase; /*maiúsculas */
+    letter-spacing: 1px; /* Aumentar o espaçamento entre letras */
+    font-size: 18px;
+}
+    
+
+.menu_esquerda ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.menu_direita ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+    /* Estilo para quando o mouse passa por cima do menu */
+    .menu_esquerda ul li a:hover,
+    .menu_direita ul li a:hover {
+        border-bottom: 4px solid rgb(4, 231, 4); /* Cor da barra verde */
+        color: rgb(4, 231, 4); /* Cor do texto verde */
+    }
+        
+
+    /* Estilo para o menu ativo (quando é clicado) */
+    .menu_esquerda ul li a.ativo,
+    .menu_direita ul li a.ativo {
+        border-bottom: 4px solid rgb(81, 255, 0); /* Cor da barra verde */
+        color: rgb(81, 255, 0); /* Cor do texto verde */
+    }
+
+    .whatsapp-botao {
+        position: fixed;
+         bottom: 20px;
+         right: 20px;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .whatsapp-botao img {
+        border-radius: 30px;
+    }
+    
+    .whatsapp-botao:hover {
+        transform: scale(1.1);
+    }
+
+/* Estilos do conteúdo da política de privacidade */
+.Politica_de_privacidade {
+    font-family: rubik, Sans-serif;
+    font-size: 1.3rem;
+    line-height: 1;
+    font-weight: 600;
+    margin-left: 200px;
+    margin-top: 140px;
+}
+
+.Politica_de_privacidade p {
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    padding-right: 40px;
+    margin: 0;
+    opacity: 0.9;
+    margin-bottom: 10px;
+    
+}
+/* Estilos do link */
+a:link {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: blue;
+}
+
+/* Estilos do compromisso do usuário */
+.Politica_de_privacidade_compromisso {
+    font-family: rubik, Sans-serif;
+    font-size: 1.3rem;
+    line-height: 1;
+    font-weight: 600;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+.Politica_de_privacidade_compromisso h3 {
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    padding-right: 40px;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.Politica_de_privacidade_compromisso p {
+font-size: 19px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: normal;
+padding-right: 40px;
+margin: 0;
+opacity: 0.9;
+margin-bottom: 10px;
+}
+
+.footer {
+    background: rgb(0, 0, 0);
+    padding: 30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.footer .row {
+    width: 97%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: gray;
+    font-size: 0.8em;
+
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.2s;
+}
+
+.footer .row a:hover {
+    color: rgb(4, 231, 4);
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
+
+.numuero-footer {
+    font-size: 1.2em;
+    margin: 0% 1%;
+}
+
+.todos-direitos-reservados {
+    margin-left: 80px;
+    text-align: center;
+}
+
+
+
+@media (max-width:720px) {
+    .footer {
+        text-align: left;
+        padding: 9%;
+    }
+
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
+    }
+
+    .footer .row a i {
+        margin: 0% 2%;
+    }
+
+    .todos-direitos-reservados {
+        margin: 0;
+
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        background-color: #f5f5f5;
+    }
+    .Politica_de_privacidade {
+        margin-left: 2vw;
+        
+    }
+
+    .Politica_de_privacidade p {
+        padding-right: 10px; 
+        opacity: 0.8;
+    }
+    
+    .Politica_de_privacidade h2 {
+        align-items: center;
+        margin-left: 2vw;
+        font-size: 55px;
+    }
+
+
+    .Politica_de_privacidade_compromisso {
+        margin: 0;
+    }
+
+    .Politica_de_privacidade_compromisso h2 {
+        margin-left: 2vw;
+        margin-top: 10vw;
+        font-size: 10vw; 
+    }
+
+    .Politica_de_privacidade_compromisso p {
+        margin-left: 2vw;
+        opacity: 0.8;
+    }
+
+    .menu_esquerda {
+        margin: 0;
+        font-size: 1vw;
+    }
+
+    .header {
+        margin: 0;
+    }
+    
+    .cabecalho {
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .cabecalho {
+        padding: 30px;
+    }
+
+    .cabecalho img {
+        height: 50px; /* Reduzir o tamanho do logo */
+        width: 50px;
+        margin: 0px 0; /* Espaçamento do logo */
+        margin-left: -30px;
+    }
+
+    .menu_esquerda ul,
+    .menu_direita ul {
+        margin: 10px 0; /* Espaçamento entre os itens do menu */
+        justify-content: flex-start; /* Alinhar o conteúdo à esquerda */
+    }
+
+    .menu_esquerda li,
+    .menu_direita li {
+        margin-right: 40px;
+        margin-left: -19px;
+        font-size: 9px; /* Reduzir o tamanho da fonte */
+    }
+
+    .menu_direita {
+        margin-left: 35px;
+        margin-top: 13px;
+        
+    } 
+
+    .menu_esquerda {
+        margin-left: 0; /* Remover a margem esquerda */
+    }
+
+    .menu_direita {
+        margin-right: 0; /* Remover a margem direita */
+    }
+}
