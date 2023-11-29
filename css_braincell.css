@@ -958,7 +958,7 @@ details[open] summary::after {
     #img2 {
         width: 65%;
         /* Reduzir o tamanho das imagens para telas menores */
-        height: 65%;
+        height: auto;
         /* Manter a proporção da imagem */
         margin: 5% auto;
         /* Margens superior e inferior com margem automática nas laterais */
