@@ -350,6 +350,7 @@ margin-bottom: 10px;
 
     .menu_esquerda {
         margin-left: 0; /* Remover a margem esquerda */
+        margin-left: 6px;
     }
 
     .menu_direita {

@@ -855,6 +855,7 @@ details[open] summary::after {
 
     .menu_esquerda {
         margin-left: 0; /* Remover a margem esquerda */
+        margin-left: 6px;
     }
 
     .menu_direita {
