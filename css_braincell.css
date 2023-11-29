@@ -965,7 +965,7 @@ details[open] summary::after {
         display: block;
         /* Alterar para exibir como bloco */
         cursor: pointer;
-        margin-top: 160vw;
+        margin-top: 130vw;
         margin-left: -30px;
 
     }
