@@ -956,7 +956,7 @@ details[open] summary::after {
 
     #img1,
     #img2 {
-        width: 75%;
+        width: 95%;
         /* Reduzir o tamanho das imagens para telas menores */
         height: auto;
         /* Manter a proporção da imagem */
