@@ -947,7 +947,7 @@ details[open] summary::after {
         .menu_esquerda {
             margin-left: 0;
             /* Remover a margem esquerda */
-            margin-left: 21vw
+            margin-left: 20vw
         }
 
         .menu_direita {
