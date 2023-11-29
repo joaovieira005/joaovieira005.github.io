@@ -965,7 +965,7 @@ details[open] summary::after {
         display: block;
         /* Alterar para exibir como bloco */
         cursor: pointer;
-        margin-top: 380px;
+        margin-top: 110vw;
         margin-left: -30px;
 
     }
@@ -988,11 +988,10 @@ details[open] summary::after {
     }
 
     .titulo_orçamento {
-        font-size: 28px;
+        font-size: 9.7vw;
         /* Reduza o tamanho da fonte do título */
-        margin-bottom: 10px;
-        /* Adicione um espaçamento inferior */
         margin-left: 30px;
+        margin-top: 17vw;
     }
 
     .cor-diferente-2 {
