@@ -624,7 +624,7 @@ select {
     margin-bottom: 10px;
 }
 
-.grupo-formula button {
+  button {
     background-color: rgb(4, 231, 4);
     border: none;
     border-radius: 5px;
