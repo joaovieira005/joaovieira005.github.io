@@ -883,7 +883,6 @@ details[open] summary::after {
 }
 
 
-
 @media (max-width:720px) {
     .footer {
         text-align: left;
@@ -956,10 +955,6 @@ details[open] summary::after {
         }
     }
 
-    .details {
-        width: 90%;
-        margin-left: 4vw;
-    }
 
     #img1,
     #img2 {
@@ -977,6 +972,7 @@ details[open] summary::after {
     }
 
     #coluna2 {
+        cursor: none;
         width: 100%;
         /* Ocupar toda a largura disponível */
         padding: 5% 0;
