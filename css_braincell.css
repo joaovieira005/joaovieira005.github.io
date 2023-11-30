@@ -1301,6 +1301,10 @@ details[open] summary::after {
         /* Espaçamento entre os campos */
     }
 
+    .grupo-formula h2 {
+        margin-left: 5px;
+    }
+
 
     label,
     input,
