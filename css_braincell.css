@@ -606,17 +606,6 @@ body {
     border-radius: 15px;
 }
 
-.perguntas-100 {
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 130px;
-    margin-left: 300px;
-}
-
-.perguntas-100 h2 {
-    font-size: 52px;
-    margin-left: 20px;
-}
-
 
 label {
     display: block;
@@ -1300,9 +1289,6 @@ details[open] summary::after {
         margin-bottom: 20px;
         /* Espaçamento entre os campos */
     }
-
-    
-
 
     label,
     input,
