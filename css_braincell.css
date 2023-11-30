@@ -1105,11 +1105,11 @@ details[open] summary::after {
         /* Adicione um espaçamento à esquerda da imagem */
     }
 
-    .perguntas-fre {
+    .perguntas-frequentes {
         margin-left: 8vw;
     }
 
-    .perguntas-fre h2 {
+    .perguntas-frequentese h2 {
         font-size: 11vw;
     }
 
@@ -1301,9 +1301,7 @@ details[open] summary::after {
         /* Espaçamento entre os campos */
     }
 
-    .grupo-formula h2 {
-        margin-left: -95px;
-    }
+
 
 
     label,
