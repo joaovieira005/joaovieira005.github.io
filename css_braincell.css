@@ -331,8 +331,6 @@ body {
     /* Espaçamento entre a barra e o texto */
 }
 
-
-
 .orcamento-gratis p {
     margin-left: 180px;
     max-width: 540px;
@@ -589,8 +587,6 @@ body {
     box-shadow: -4px 7px 10px rgba(206, 197, 197);
     margin-top: 2vw;
     margin-top: 100px;
-
-
 }
 
 .linha {
@@ -608,6 +604,14 @@ body {
 .grupo-formula button {
     width: 80%;
     border-radius: 15px;
+}
+
+.perguntas-100 {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 100px;
+    margin-left: 30px;
+
 }
 
 label {
@@ -1103,14 +1107,6 @@ details[open] summary::after {
         /* Reduza o tamanho da imagem da seta */
         margin-left: 5px;
         /* Adicione um espaçamento à esquerda da imagem */
-    }
-
-    .perguntas-fre {
-        margin-left: 8vw;
-    }
-
-    .perguntas-fre h2 {
-        font-size: 11vw;
     }
 
     .cards {
