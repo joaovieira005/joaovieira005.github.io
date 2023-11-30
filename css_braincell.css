@@ -607,12 +607,15 @@ body {
 }
 
 .perguntas-100 {
-    font-size: 87px;
     font-family: 'Montserrat', sans-serif;
     margin-top: 130px;
-    margin-left: 200px;
-
+    margin-left: 300px;
 }
+
+.perguntas-100 h2 {
+    font-size: 87px;
+}
+
 
 label {
     display: block;
