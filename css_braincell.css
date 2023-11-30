@@ -407,6 +407,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.orcamento-gratis-2 h2 {
+    margin-left: 130px;
+}
+
 .orcamento-gratis-titulo-2::before {
     /* before para adicionar conteúdo antes do conteúdo real */
     content: '';
@@ -663,7 +667,7 @@ button:hover {
 
 .perguntas-fre {
     font-family: 'Montserrat', sans-serif;
-    font-size: 34px;
+    font-size: 54px;
     font-weight: 700;
     margin-left: 300px;
 }
