@@ -956,6 +956,11 @@ details[open] summary::after {
         }
     }
 
+    .details {
+        width: 90%;
+        margin-left: 4vw;
+    }
+
     #img1,
     #img2 {
         width: 87%;
