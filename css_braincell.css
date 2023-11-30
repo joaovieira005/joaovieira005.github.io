@@ -1053,6 +1053,9 @@ details[open] summary::after {
 
     .perguntas-fre {
         margin-left: 8vw;
+    }
+
+    .perguntas-fre h2 {
         font-size: 11vw;
     }
 
