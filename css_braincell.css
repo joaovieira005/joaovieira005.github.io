@@ -407,10 +407,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.orcamento-gratis-2 h2 {
-    margin-left: 130px;
-}
-
 .orcamento-gratis-titulo-2::before {
     /* before para adicionar conteúdo antes do conteúdo real */
     content: '';
@@ -624,7 +620,7 @@ select {
     margin-bottom: 10px;
 }
 
-  button {
+button {
     background-color: rgb(4, 231, 4);
     border: none;
     border-radius: 5px;
@@ -632,7 +628,6 @@ select {
     padding: 10px 350px;
     font-size: 18px;
     cursor: pointer;
-    width: 80%;
 }
 
 button:hover {
@@ -667,7 +662,7 @@ button:hover {
 
 .perguntas-fre {
     font-family: 'Montserrat', sans-serif;
-    font-size: 54px;
+    font-size: 34px;
     font-weight: 700;
     margin-left: 300px;
 }
