@@ -620,7 +620,7 @@ select {
     margin-bottom: 10px;
 }
 
-button {
+.grupo-formula button {
     background-color: rgb(4, 231, 4);
     border: none;
     border-radius: 5px;
@@ -628,6 +628,7 @@ button {
     padding: 10px 350px;
     font-size: 18px;
     cursor: pointer;
+    width: 80%;
 }
 
 button:hover {
