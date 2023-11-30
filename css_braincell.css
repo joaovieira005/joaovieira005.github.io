@@ -424,8 +424,8 @@ body {
 }
 
 .orcamento-gratis-titulo-2 {
-    margin-left: 70px;
-    font-size: 84px;
+    margin-left: 180px;
+    font-size: 44px;
     letter-spacing: 1.5px;
     margin-top: -10px
 }
@@ -662,7 +662,7 @@ button:hover {
 
 .perguntas-fre {
     font-family: 'Montserrat', sans-serif;
-    font-size: 34px;
+    font-size: 64px;
     font-weight: 700;
     margin-left: 300px;
 }
@@ -831,6 +831,7 @@ details[open] summary::after {
 }
 
 .footer {
+    font-size: 22px;
     background: rgb(0, 0, 0);
     padding: 30px 0px;
     font-family: 'Play', sans-serif;
