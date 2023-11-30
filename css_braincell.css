@@ -1034,6 +1034,9 @@ details[open] summary::after {
 
     .coluna1 {
         width: 70%;
+        margin: 0;
+        padding: 0;
+        
     }
 
     .titulo_orçamento {
