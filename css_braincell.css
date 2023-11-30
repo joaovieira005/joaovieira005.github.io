@@ -1105,11 +1105,12 @@ details[open] summary::after {
         /* Adicione um espaçamento à esquerda da imagem */
     }
 
+    .perguntas-fre {
+        margin-left: 8vw;
+    }
 
-    .perguntas-frequentese h2 {
+    .perguntas-fre h2 {
         font-size: 11vw;
-        margin-left: -9vw;
-
     }
 
     .cards {
@@ -1300,7 +1301,7 @@ details[open] summary::after {
         /* Espaçamento entre os campos */
     }
 
-
+    
 
 
     label,
