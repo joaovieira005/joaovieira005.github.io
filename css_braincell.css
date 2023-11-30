@@ -1105,12 +1105,11 @@ details[open] summary::after {
         /* Adicione um espaçamento à esquerda da imagem */
     }
 
-    .perguntas-frequentes {
-        margin-left: 0vw;
-    }
 
     .perguntas-frequentese h2 {
         font-size: 11vw;
+        margin-left: -9vw;
+
     }
 
     .cards {
