@@ -662,7 +662,7 @@ button:hover {
     margin-left: 20px;
 }
 
-.perguntas-frequentes-details {
+.perguntas-frequentes-details h2  {
     font-family: 'Montserrat', sans-serif;
     font-size: 52px;
     margin-left: 300px;
