@@ -1312,7 +1312,9 @@ details[open] summary::after {
     .hr-fomr {
         color: rgb(4, 231, 4);
         width: 100%;
+    }
 
-
+    .perguntas-frequentes-details {
+        margin-left: 3vw;
     }
 }
