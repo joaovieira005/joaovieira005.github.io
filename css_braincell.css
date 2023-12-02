@@ -984,6 +984,7 @@ details[open] summary::after {
 
         .menu_esquerda li,
         .menu_direita li {
+            text-align: center;
             margin-right: 40px;
             margin-left: -19px;
             font-size: 11px;
