@@ -50,10 +50,10 @@ html {
 
 #img1,
 #img2 {
-    width: 60%;
-    height: 60%;
+    width: 55%;
+    height: 55%;
     margin-top: 7%;
-    margin-left: 45%;
+    margin-left: 5%;
     position: absolute;
     padding-left: 10%;
     cursor: pointer;
